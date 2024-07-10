@@ -16,6 +16,14 @@ st.set_page_config(
     page_icon='https://github.dev/mimoos/Pulsar/blob/main/Pulsar.png', # This is an emoji shortcode. Could be a URL too.
 )
 
+Pulsar_data = pd.read_csv('data/Pulsar.csv')
+
+
+Pulsar_data
+
+
+
+
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
 
