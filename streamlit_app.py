@@ -50,7 +50,7 @@ if Pulsar_button == 1:
     y_pred = Model.predict(data)
     y_prob = Model.predict_proba(data)
     if y_pred == 0:
-        st.write('The data entered of the object is not a pulsar, with the probability of ', '%.02f' % y_proba.stype(int), '.')
+        st.write('The data entered of the object is not a pulsar, with the probability of ', '%.02f' % y_prob.stype(int), '.')
     else:
         st.write('The data entered of the object is a pulsar, with the probability of ', '%.02f' % y_prob.astype(int), '.')
 # -----------------------------------------------------------------------------
