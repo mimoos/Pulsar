@@ -27,7 +27,7 @@ X_Features = X.columns
 
 Pulsar_data
 
-X_Faatures
+X_Features
 
 
 # -----------------------------------------------------------------------------
