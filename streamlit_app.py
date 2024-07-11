@@ -49,6 +49,8 @@ data[6] = EK_DMSNR_Curve_value = st.number_input('Insert Excess Kurtosis of DM S
 data[7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SNR Curve of Obersations')
 
 data = pd.DataFrame([data], columns = X_Features)
+
+Pulsar_data.index.get_loc(5)
 data
 Pulsar_button = st.button('Predict if it is a Pulsar')
 
