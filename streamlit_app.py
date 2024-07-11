@@ -50,7 +50,7 @@ data[7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SN
 
 data = pd.DataFrame([data], columns = X_Features)
 
-Get_data = Pulsar_data.index.get_loc(5)
+Get_data = Pulsar_data[5]
 Get_data
 data
 Pulsar_button = st.button('Predict if it is a Pulsar')
