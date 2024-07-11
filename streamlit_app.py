@@ -28,7 +28,7 @@ X = Pulsar_data.drop(['Class'], axis = 1)
 
 X_Features = X.columns
 
-Model = SGDClassifier(loss="modified_huber")
+Model = SGDClassifier()
 #Model = CalibratedClassifierCV(base_model)
 #Model = make_pipeline(StandardScaler(), LogisticRegression())
 #Model = LogisticRegression()
