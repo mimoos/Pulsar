@@ -33,15 +33,16 @@ Pulsar_data
 X_Features
 
 data = [None] * len(X_Features)
-data[0,0] = Mean_Integrated_value = st.number_input('Insert Mean of Observations')
-data[0,1] = SD_value = st.number_input('Insert Standard Deviation of Observations')
-data[0,2] = EK_value = st.number_input('Insert Excess Kurtosis of Observations')
-data[0,3] = Skewness_value = st.number_input('Insert Skewness of Observations')
-data[0,4] = Mean_DMSNR_Curve_value = st.number_input('Insert Mean of DM SNR Curve of Obersations')
-data[0,5] = SD_DMSNR_Curve_value = st.number_input('Insert Standard Deviation of DM SNR Curve of Obersations')
-data[0,6] = EK_DMSNR_Curve_value = st.number_input('Insert Excess Kurtosis of DM SNR Curve of Obersations')
-data[0,7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SNR Curve of Obersations')
+data[0] = Mean_Integrated_value = st.number_input('Insert Mean of Observations')
+data[1] = SD_value = st.number_input('Insert Standard Deviation of Observations')
+data[2] = EK_value = st.number_input('Insert Excess Kurtosis of Observations')
+data[3] = Skewness_value = st.number_input('Insert Skewness of Observations')
+data[4] = Mean_DMSNR_Curve_value = st.number_input('Insert Mean of DM SNR Curve of Obersations')
+data[5] = SD_DMSNR_Curve_value = st.number_input('Insert Standard Deviation of DM SNR Curve of Obersations')
+data[6] = EK_DMSNR_Curve_value = st.number_input('Insert Excess Kurtosis of DM SNR Curve of Obersations')
+data[7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SNR Curve of Obersations')
 
+data = np.array(data).T.tolist()
 data = pd.DataFrame(data, columns = X_Features)
 
 Pulsar_button = st.button('Predict if it is a Pulsar')
