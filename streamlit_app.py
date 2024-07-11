@@ -15,9 +15,9 @@ from sklearn.linear_model import SGDClassifier
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
     page_title='Pulsar',
-    page_icon='https://github.dev/mimoos/Pulsar/blob/main/Pulsar.png', # This is an emoji shortcode. Could be a URL too.
+    page_icon='Pulsar.png', # This is an emoji shortcode. Could be a URL too.
 )
-
+#https://github.dev/mimoos/Pulsar/blob/main/
 Pulsar_data = pd.read_csv('data/Pulsar.csv')
 
 y = Pulsar_data['Class']
