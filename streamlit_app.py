@@ -20,10 +20,14 @@ st.set_page_config(
 
 Pulsar_data = pd.read_csv('data/Pulsar.csv')
 
+y = Pulsar_data['Class']
+X = Pulsar_data.drop(['Class'], axis = 1)
+
+X_Features = X.columns
 
 Pulsar_data
 
-
+X_Faatures
 
 
 # -----------------------------------------------------------------------------
