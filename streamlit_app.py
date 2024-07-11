@@ -48,8 +48,9 @@ data[5] = SD_DMSNR_Curve_value = st.number_input('Insert Standard Deviation of D
 data[6] = EK_DMSNR_Curve_value = st.number_input('Insert Excess Kurtosis of DM SNR Curve of Obersations')
 data[7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SNR Curve of Obersations')
 
-data = pd.DataFrame([data], columns = X_Features)
-
+#data = pd.DataFrame([data], columns = X_Features)
+data_number = st.number_input('Insert the test number')
+data = pd.DataFrame([Pulsar_data.iloc[data_number])
 Get_data = Pulsar_data.iloc[5].T
 Get_data
 data
