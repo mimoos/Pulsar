@@ -35,8 +35,6 @@ Model.fit(X, y)
 
 Pulsar_data
 
-X_Features
-
 data = [None] * len(X_Features)
 data[0] = Mean_Integrated_value = st.number_input('Insert Mean of Observations')
 data[1] = SD_value = st.number_input('Insert Standard Deviation of Observations')
