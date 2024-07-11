@@ -50,7 +50,7 @@ data[7] = Skewness_DMSNR_Curve_value = st.number_input('Insert Skewness of DM SN
 
 #data = pd.DataFrame([data], columns = X_Features)
 data_number = st.number_input('Insert the test number')
-data = pd.DataFrame([Pulsar_data.iloc[data_number])
+data = pd.DataFrame([Pulsar_data.iloc[data_number]])
 Get_data = Pulsar_data.iloc[5].T
 Get_data
 data
