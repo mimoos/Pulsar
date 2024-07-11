@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 
@@ -28,10 +29,11 @@ X = Pulsar_data.drop(['Class'], axis = 1)
 
 X_Features = X.columns
 
-Model = SGDClassifier()
+#Model = SGDClassifier()
 #Model = CalibratedClassifierCV(base_model)
 #Model = make_pipeline(StandardScaler(), LogisticRegression())
 #Model = LogisticRegression()
+Model = SVC()
 Model.fit(X, y)
 
 Pulsar_data
