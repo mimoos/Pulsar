@@ -48,10 +48,11 @@ Pulsar_button = st.button('Predict if it is a Pulsar')
 
 if Pulsar_button == 1:
     y_pred = Model.predict(data)
+    y_prob = Model.predict_proba(data)
     if y_pred == 0:
-        st.write('The data entered of the object is not a pulsar.')
+        st.write('The data entered of the object is not a pulsar, with the probability of ', '%0.02f' % y_prob, '.')
     else:
-        st.write('The data entered of the object is a pulsar.')
+        st.write('The data entered of the object is a pulsar, with the probability of ', '%0.02f' % y_prob, '.')
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
 
