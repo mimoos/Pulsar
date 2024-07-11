@@ -30,7 +30,8 @@ X_Features = X.columns
 
 #Model = SGDClassifier()
 #Model = CalibratedClassifierCV(base_model)
-Model = make_pipeline(StandardScaler(), LogisticRegression())
+#Model = make_pipeline(StandardScaler(), LogisticRegression())
+Model = LinearRegression()
 Model.fit(X, y)
 
 Pulsar_data
