@@ -11,6 +11,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from sklearn.linear_model import SGDClassifier
+from sklearn.pipeline import make_pipeline
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
@@ -25,8 +26,9 @@ X = Pulsar_data.drop(['Class'], axis = 1)
 
 X_Features = X.columns
 
-Model = SGDClassifier()
-Model = CalibratedClassifierCV(base_model)
+#Model = SGDClassifier()
+#Model = CalibratedClassifierCV(base_model)
+Model = make_pipeline(StandardScaler(), LogisticRegression())
 Model.fit(X, y)
 
 Pulsar_data
