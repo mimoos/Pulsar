@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 
