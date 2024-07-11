@@ -17,13 +17,16 @@ st.set_page_config(
     page_title='Pulsar',
     page_icon='Pulsar.png', # This is an emoji shortcode. Could be a URL too.
 )
-#https://github.dev/mimoos/Pulsar/blob/main/
+
 Pulsar_data = pd.read_csv('data/Pulsar.csv')
 
 y = Pulsar_data['Class']
 X = Pulsar_data.drop(['Class'], axis = 1)
 
 X_Features = X.columns
+
+Model = SGDClassifier()
+Model.fit(X, y)
 
 Pulsar_data
 
