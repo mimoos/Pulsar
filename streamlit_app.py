@@ -67,7 +67,7 @@ if Pulsar_button == 1:
         st.write('The data entered of the object is a pulsar, with the probability of', '%.02f' % (y_prob*100), '%.')
 
 # Predict on the Test Data
-y_pred = model.predict(X)
+y_pred = Model.predict(X)
 
 # Generate the confusion matrix
 cm = confusion_matrix(y, y_pred)
