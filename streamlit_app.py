@@ -73,7 +73,13 @@ y_pred = Model.predict(X)
 cm = confusion_matrix(y, y_pred)
 
 cm
-
+# Create a Confusion Matrix
+plt.figure(figsize=(8, 8))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Greens')
+plt.title('Confusion Matrix')
+plt.ylabel('True label')
+plt.xlabel('Predicted label')
+plt.show()
 
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
