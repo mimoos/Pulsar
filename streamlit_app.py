@@ -16,6 +16,9 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
     page_title='Pulsar',
@@ -62,6 +65,16 @@ if Pulsar_button == 1:
         st.write('The data entered of the object is not a pulsar, with the probability of', '%.02f' % (y_prob*100), '%.')
     else:
         st.write('The data entered of the object is a pulsar, with the probability of', '%.02f' % (y_prob*100), '%.')
+
+# Predict on the Test Data
+y_pred = model.predict(X)
+
+# Generate the confusion matrix
+cm = confusion_matrix(y, y_pred)
+
+cm
+
+
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
 
