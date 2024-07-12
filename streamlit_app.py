@@ -34,7 +34,7 @@ X_Features = X.columns
 
 #Model = SGDClassifier(loss="modified_huber", penalty='l2', alpha=1e-3, random_state=42)
 #Model = CalibratedClassifierCV(base_model)
-Model = make_pipeline(StandardScaler(), LogisticRegression(solver='sag', class_weight = 'balanced'))
+Model = make_pipeline(StandardScaler(), LogisticRegression(solver='sag', class_weight = 'auto'))
 #Model = LogisticRegression()
 #Model = SVC(probability=True)
 Model.fit(X, y)
