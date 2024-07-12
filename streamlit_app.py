@@ -82,6 +82,7 @@ plt.xlabel('Predicted label')
 plt.show()
 
 cr = classification_report(y, y_pred, target_names=None)
+cr
 
 
 # -----------------------------------------------------------------------------
